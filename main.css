@@ -1,0 +1,376 @@
+.navbar-default {
+    background-color: #fff !important;
+    height: 120px;
+}
+
+.navbar {
+    position: relative;
+    margin-bottom: 0 !important;
+}
+
+span {
+    display:inline-block;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 3px;
+}
+
+.navbar-collapse ul {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.navbar-nav a {
+    text-decoration: underline;
+}
+
+.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -110px !important;  /* 50% of your logo width */
+    display: block;
+}
+
+.homeFirstBlock {
+    margin-top: 0;
+    background-color: #fafafa;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homeFirstBlock h1 {
+    text-align: center;
+}
+
+.homeFirstBlock p {
+    font-size: 18px;
+}
+
+.video {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.homeSecondBlock {
+    position: relative;
+    text-align: center;
+    background-color: #005896;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.homeSecondBlock:before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 40px #005896;
+    border-left: solid 40px transparent;
+    border-right: solid 40px transparent;
+}
+
+.homeSecondBlock h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homeThirdBlock {
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+.fa-check-square-o {
+    color: #005896;
+    margin-right: 10px;
+    display: inline;
+    font-size: 30px !important;
+}
+
+.homeThirdRow h3 {
+    display: inline;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #005896 !important;
+}
+
+.btn-primary:hover {
+    background-color: #004678 !important;
+}
+
+.btn-primary a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-primary:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.homeThirdRow img {
+    margin-left: 70px;
+    -moz-box-shadow:    3px 3px 5px 5px #e7e7e7;
+    -webkit-box-shadow: 3px 3px 5px 5px #e7e7e7;
+    box-shadow:         3px 3px 5px 5px #e7e7e7;
+    max-width: 110%;
+}
+
+.homeFourthBlock {
+    position: relative;
+    text-align: center;
+    background-color: #009689;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.homeFourthBlock:before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 40px #009689;
+    border-left: solid 40px transparent;
+    border-right: solid 40px transparent;
+}
+
+.homeFourthBlock h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.quoteContainer {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.quoteDiv {
+    padding: 20px;
+    background-color: #e7e7e7;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+.quotePara {
+    margin-left: 15px;
+}
+
+.fa-quote-right {
+    float: right;
+    margin-top: -10px;
+}
+
+.quoteProfile {
+    margin-top: 10px;
+}
+
+.quoteImg {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px !important;
+    display: inline-block !important;
+}
+
+.quoteName {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homeFinalBlock {
+    position: relative;
+    text-align: center;
+    background-color: #005896;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 40px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homeFinalBlock:before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 40px #005896;
+    border-left: solid 40px transparent;
+    border-right: solid 40px transparent;
+}
+
+.contactCont {
+    margin-top: 50px;
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.contactRow {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+.contactColRight {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 20px;
+}
+
+.contactColRight h4 {
+    font-size: 28px;
+    margin-left: 50px;
+}
+
+.contactColRight h5 {
+    margin-top: 25px;
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+.contactColRight a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contactColRight a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 90px;
+    background-color: #ccc;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.footer img {
+    text-align: right;
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 1235px) {
+    .homeThirdRow img {
+        margin-left: 0px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-default {
+        height: 100px;
+    }
+
+    .brand {
+        width: 150px !important;
+        height: auto !important;
+        left: 0;
+        position: relative;
+        margin-left: -10px !important;
+    }
+
+    .navLinksLeft {
+        float: right !important;
+        margin-left: 10px !important;
+    }
+
+    .homeThirdRow img {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .quoteContainer {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    .quoteContainer .col-md-4 {
+        margin-top: 35px;
+    }
+
+    .footer .col-md-4 {
+        margin-top: 20px;
+    }
+
+    .footerCol {
+        margin-top: 50px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default {
+        height: 120px;
+    }
+
+    .brand {
+        width: 200px !important;
+        margin-left: 0 !important;
+    }
+
+    .navLinksLeft {
+        float: none !important;
+        margin-left: 0 !important;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        margin-top: 62px;
+        background-color: #fff;
+        padding-bottom: 30px;
+    }
+
+    .navbar-default {
+        z-index: 1000;
+    }
+
+    .navbar-nav {
+        margin: 0 !important;
+    }
+
+    .contactColRight {
+        margin-top: 50px;
+    }
+
+    .contactColRight h4 {
+        margin-left: 0px;
+    }
+
+    .contactColRight h5 {
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<script src="https://use.fontawesome.com/09c554a43e.js"></script>
+
+
+		<style>
+			.navbar-default {
+			    background-color: #fff !important;
+			    height: 120px;
+			}
+
+			.navbar {
+			    position: relative;
+			    margin-bottom: 0 !important;
+			}
+
+			span {
+			    display:inline-block;
+			    border-bottom: 1px solid #e7e7e7;
+			    padding-bottom: 3px;
+			}
+
+			.navbar-collapse ul {
+			    margin-top: 30px;
+			    font-size: 18px;
+			}
+
+			.navbar-nav a {
+			    text-decoration: underline;
+			}
+
+			.brand {
+			    position: absolute;
+			    left: 50%;
+			    margin-left: -110px !important;  /* 50% of your logo width */
+			    display: block;
+			}
+
+			.homeFirstBlock {
+			    margin-top: 0;
+			    background-color: #fafafa;
+			    color: #000;
+			    font-family: 'Open Sans', sans-serif;
+			}
+
+			.homeFirstBlock h1 {
+			    text-align: center;
+			}
+
+			.homeFirstBlock p {
+			    font-size: 18px;
+			}
+
+			.video {
+			    -webkit-box-shadow: 0 8px 6px -6px black;
+			    -moz-box-shadow: 0 8px 6px -6px black;
+			    box-shadow: 0 8px 6px -6px black;
+			}
+
+			.homeSecondBlock {
+			    position: relative;
+			    text-align: center;
+			    background-color: #005896;
+			    padding-top: 25px;
+			    padding-bottom: 25px;
+			}
+
+			.homeSecondBlock:before{
+			    content:'';
+			    position: absolute;
+			    top: 100%;
+			    left: 0;
+			    right: 0;
+			    margin: 0 auto;
+			    width: 0;
+			    height: 0;
+			    border-top: solid 40px #005896;
+			    border-left: solid 40px transparent;
+			    border-right: solid 40px transparent;
+			}
+
+			.homeSecondBlock h2 {
+			    color: #fff;
+			    font-family: 'Open Sans', sans-serif;
+			}
+
+			.homeThirdBlock {
+			    margin-top: 50px;
+			    max-width: 1000px;
+			}
+
+			.fa-check-square-o {
+			    color: #005896;
+			    margin-right: 10px;
+			    display: inline;
+			    font-size: 30px !important;
+			}
+
+			.homeThirdRow h3 {
+			    display: inline;
+			    font-size: 16px;
+			    text-transform: uppercase;
+			}
+
+			.btn-primary {
+			    color: #fff;
+			    background-color: #005896 !important;
+			}
+
+			.btn-primary:hover {
+			    background-color: #004678 !important;
+			}
+
+			.btn-primary a {
+			    color: #fff;
+			    font-size: 16px;
+			    text-decoration: none;
+			}
+
+			.btn-primary:hover a {
+			    color: #fff;
+			    text-decoration: none;
+			}
+
+			.homeThirdRow img {
+			    margin-left: 70px;
+			    -moz-box-shadow:    3px 3px 5px 5px #e7e7e7;
+			    -webkit-box-shadow: 3px 3px 5px 5px #e7e7e7;
+			    box-shadow:         3px 3px 5px 5px #e7e7e7;
+			    max-width: 110%;
+			}
+
+			.homeFourthBlock {
+			    position: relative;
+			    text-align: center;
+			    background-color: #009689;
+			    padding-top: 25px;
+			    padding-bottom: 25px;
+			}
+
+			.homeFourthBlock:before{
+			    content:'';
+			    position: absolute;
+			    top: 100%;
+			    left: 0;
+			    right: 0;
+			    margin: 0 auto;
+			    width: 0;
+			    height: 0;
+			    border-top: solid 40px #009689;
+			    border-left: solid 40px transparent;
+			    border-right: solid 40px transparent;
+			}
+
+			.homeFourthBlock h2 {
+			    color: #fff;
+			    font-family: 'Open Sans', sans-serif;
+			}
+
+			.quoteContainer {
+			    margin-top: 80px;
+			    margin-bottom: 60px;
+			}
+
+			.quoteDiv {
+			    padding: 20px;
+			    background-color: #e7e7e7;
+			    margin-right: auto;
+			    margin-left: auto;
+			    border-radius: 8px;
+			}
+
+			.quotePara {
+			    margin-left: 15px;
+			}
+
+			.fa-quote-right {
+			    float: right;
+			    margin-top: -10px;
+			}
+
+			.quoteProfile {
+			    margin-top: 10px;
+			}
+
+			.quoteImg {
+			    border-radius: 50%;
+			    width: 75px;
+			    height: 75px !important;
+			    display: inline-block !important;
+			}
+
+			.quoteName {
+			    display: inline-block;
+			    font-family: 'Open Sans', sans-serif;
+			}
+
+			.homeFinalBlock {
+			    position: relative;
+			    text-align: center;
+			    background-color: #005896;
+			    padding-top: 25px;
+			    padding-bottom: 25px;
+			    margin-top: 40px;
+			    color: #fff;
+			    font-family: 'Open Sans', sans-serif;
+			}
+
+			.homeFinalBlock:before{
+			    content:'';
+			    position: absolute;
+			    top: 100%;
+			    left: 0;
+			    right: 0;
+			    margin: 0 auto;
+			    width: 0;
+			    height: 0;
+			    border-top: solid 40px #005896;
+			    border-left: solid 40px transparent;
+			    border-right: solid 40px transparent;
+			}
+
+			.contactCont {
+			    margin-top: 50px;
+			    max-width: 900px;
+			    margin-bottom: 40px;
+			}
+
+			.contactRow {
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+
+			form {
+			    font-family: 'Open Sans', sans-serif;
+			    color: #000;
+			    font-size: 16px;
+			}
+
+			.contactColRight {
+			    text-align: center;
+			    font-family: 'Open Sans', sans-serif;
+			    color: #000;
+			    font-size: 20px;
+			}
+
+			.contactColRight h4 {
+			    font-size: 28px;
+			    margin-left: 50px;
+			}
+
+			.contactColRight h5 {
+			    margin-top: 25px;
+			    font-size: 22px;
+			    margin-left: 50px;
+			}
+
+			.contactColRight a {
+			    text-decoration: none;
+			    color: #000;
+			}
+
+			.contactColRight a:hover {
+			    text-decoration: none;
+			}
+
+			.footer {
+			    margin-top: 90px;
+			    background-color: #ccc;
+			    color: #000;
+			    font-family: 'Open Sans', sans-serif;
+			    padding: 30px;
+			    text-align: center;
+			    padding-bottom: 90px;
+			}
+
+			.footer img {
+			    text-align: right;
+			    width: 150px;
+			    height: auto;
+			}
+
+			@media (max-width: 1235px) {
+			    .homeThirdRow img {
+			        margin-left: 0px;
+			        max-width: 100%;
+			    }
+			}
+
+			@media (max-width: 991px) {
+			    .navbar-default {
+			        height: 100px;
+			    }
+
+			    .brand {
+			        width: 150px !important;
+			        height: auto !important;
+			        left: 0;
+			        position: relative;
+			        margin-left: -10px !important;
+			    }
+
+			    .navLinksLeft {
+			        float: right !important;
+			        margin-left: 10px !important;
+			    }
+
+			    .homeThirdRow img {
+			        margin-top: 30px;
+			        max-width: 100%;
+			    }
+
+			    .quoteContainer {
+			        margin-top: 40px;
+			        margin-bottom: 60px;
+			    }
+
+			    .quoteContainer .col-md-4 {
+			        margin-top: 35px;
+			    }
+
+			    .footer .col-md-4 {
+			        margin-top: 20px;
+			    }
+
+			    .footerCol {
+			        margin-top: 50px !important;
+			    }
+			}
+
+			@media (max-width: 767px) {
+			    .navbar-default {
+			        height: 120px;
+			    }
+
+			    .brand {
+			        width: 200px !important;
+			        margin-left: 0 !important;
+			    }
+
+			    .navLinksLeft {
+			        float: none !important;
+			        margin-left: 0 !important;
+			    }
+
+			    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+			        margin-top: 62px;
+			        background-color: #fff;
+			        padding-bottom: 30px;
+			    }
+
+			    .navbar-default {
+			        z-index: 1000;
+			    }
+
+			    .navbar-nav {
+			        margin: 0 !important;
+			    }
+
+			    .contactColRight {
+			        margin-top: 50px;
+			    }
+
+			    .contactColRight h4 {
+			        margin-left: 0px;
+			    }
+
+			    .contactColRight h5 {
+			        margin-left: 0px;
+			    }
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        	<span class="sr-only">Toggle navigation</span>
+			        	<span class="icon-bar"></span>
+			       		<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			      	</button>
+      				<a class="navbar-brand" href="#">
+				    	<img class="img-responsive brand" alt="Brand" src="seb_logo.jpg" style="height: 100px; width: 220px;">
+				    </a>
+    			</div>
+
+    			<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    				<ul class="nav navbar-nav navLinksLeft">
+        				<li><a href="#"><span>SERVICES</span></a></li>
+        				<li><a href="#"><span>ABOUT US</span></a></li>
+      				</ul>
+
+      				<ul class="nav navbar-nav navbar-right">
+        				<li><a href="#"><span>QUALITY</span></a></li>
+        				<li><a href="#"><span>COMPANY DIRECTORY</span></a></li>
+      				</ul>
+      			</div>
+      		</div>
+      	</nav>
+
+      	<div class="container-fluid homeFirstBlock">
+      		<div class="row">
+      			<div class="col-md-6 homeLeftCol">
+      				<h1><span>SouthEast Broach</span></h1>
+      				<p>Southeast Broach Company - South Carolina LLC strives to address and service the unique requirements of the Jet Engine and Land Turbine manufacturers in the area of precision broaching.</p>	
+      				<br>
+      				<p>Through continual commitment to individual customer service and product quality, we have earned our reputation as a world class manufacturer. This can be attributed to dedication at every level of our organization.</p>
+				</div>
+
+				<div class="col-md-6 homeRightCol">
+      				<h1><span>50 Years Of Successful Business</span></h1>
+      				<p></p>
+      				<div class="video">
+				        <video autoplay="" loop="" class="img-responsive" poster=src="placeholder.jpg">
+				            <source src="seb.webm" type="video/webm" />
+				            <source src="seb.mp4" type="video/mp4" />
+				        </video>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="container-fluid homeSecondBlock">
+			<h2>50 Years of Excellence Service providing quality around every corner</h2>
+		</div>
+
+		<div class="container homeThirdBlock">
+			<div class="row homeThirdRow">
+				<div class="col-md-6">
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<h3>Manufacture precision turbine disc broach Slotter, Truncator, Neck Shaver and many other tools</h3>
+					<br>
+					<br>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i><h3>Assist customers in analyzing and resolving complex broaching issues</h3>
+					<br>
+					<br>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i><h3>re-sharpening or re-conditioning worn tools</h3>
+					<br>
+					<br>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i><h3>Assure that broach tool designs both meet the design objective and maximize value received</h3>
+					<br>
+					<br>
+					<i class="fa fa-check-square-o" aria-hidden="true"></i><h3>design capabilities in the following industries Aerospace, Agricultural, Automotive, and Defense</h3>
+					<br>
+					<button type="button" class="btn btn-primary" style="margin-top: 30px;"><a href="#">See More Services <i class="fa fa-arrow-right" style="margin-left: 5px;" aria-hidden="true"></i></a></button>
+				</div>
+
+				<div class="col-md-6">
+					<img class="img-responsive" src="seb_main_block.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid homeFourthBlock" style="margin-top: 50px;">
+			<h2>Some Things People are Saying About SouthEast Broach</h2>
+		</div>
+
+		<div class="container quoteContainer">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="quoteDiv">
+						<i class="fa fa-quote-left" aria-hidden="true"></i>
+						<p class="quotePara">SoutheEast Broach is an incredible company. They provide high quality services that give a lasting impression for years to come.</p>
+						<i class="fa fa-quote-right" aria-hidden="true"></i>
+					</div>
+					<div class="quoteProfile">
+						<img class="img-responsive quoteImg" src="http://www.eventimaging.ca/wp-content/uploads/2014/10/IMG_7348-256x256.jpg">
+						<p class="quoteName">Tom from <a href="#">Example Company</a></p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="quoteDiv">
+						<i class="fa fa-quote-left" aria-hidden="true"></i>
+						<p class="quotePara">SoutheEast Broach is an incredible company. They provide high quality services that give a lasting impression for years to come.</p>
+						<i class="fa fa-quote-right" aria-hidden="true"></i>
+					</div>
+					<div class="quoteProfile">
+						<img class="img-responsive quoteImg" src="http://www.jimmyamerica.com/wp-content/plugins/igit-related-posts-with-thumb-images-after-posts/timthumb.php?src=/wp-content/uploads/2015/05/204A3146-landscape-1024x682.jpg&w=100&h=100&zc=1">
+						<p class="quoteName" style="margin-top: 30px; margin-right: 5px;">Jessica from <a href="#">Example Company</a></p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="quoteDiv">
+						<i class="fa fa-quote-left" aria-hidden="true"></i>
+						<p class="quotePara">SoutheEast Broach is an incredible company. They provide high quality services that give a lasting impression for years to come.</p>
+						<i class="fa fa-quote-right" aria-hidden="true"></i>
+					</div>
+					<div class="quoteProfile">
+						<img class="img-responsive img-circle quoteImg" src="https://photos.smugmug.com/Corporate/Corporate-Headshot-Examples/i-HTLVpcP/0/6c46147a/Ti/2013-01-22_MEDHOSTHeadshots_McWhorter20edit2-Ti.jpg">
+						<p class="quoteName">Bill from <a href="#">Example Company</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid homeFinalBlock">
+			<h2>Learn How 50 Years Of Experience Can Help Your Company</h2>
+		</div>
+
+		<div class="container contactCont">
+			<div class="row contactRow">
+				<div class="col-md-6">
+					<form>
+						<div class="form-group">
+							<label for="name">Name:</label>
+					    	<input type="text" class="form-control" id="name" placeholder="Jane Doe">
+					  	</div>
+					  	<div class="form-group">
+							<label for="name">Company Name:</label>
+					    	<input type="text" class="form-control" id="name" placeholder="Example Company">
+					  	</div>
+						<div class="form-group">
+							<label for="email">Email address:</label>
+							<input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+						</div>
+						<label for="info">What Can We Help You With?</label>
+						<textarea class="form-control" rows="3"></textarea>
+
+						<button type="submit" class="btn btn-primary" style="margin-top: 10px;">Submit</button>
+					</form>
+				</div>
+
+				<div class="col-md-6 contactColRight">
+					<h4><span>Contact Us:</span></h4>
+					<h5><i class="fa fa-phone" aria-hidden="true" style="margin-right: 10px;"></i>+1 864-879-7641</h5>
+					<h5><i class="fa fa-envelope-o" aria-hidden="true" style="margin-right: 10px;"></i>Sales@sebroach.com</h5>
+					<a href="#"><h5><i class="fa fa-facebook" aria-hidden="true" style="margin-right: 10px;"></i>SouthEast Broach Facebook</h5></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid footer">
+			<div class="row">
+				<div class="col-md-4">
+					<img class="img-responsive center-block" src="iso1.png">
+				</div>
+
+				<div class="col-md-4 footerCol">
+					<a href="#"><img class="img-responsive center-block" style="margin-bottom: 15px;" src="http://www.federalbroach.com/images/FB-logo.png"></a>
+					<a href="#"><img class="img-responsive center-block" src="http://www.mhicorrugating.com/assets/img/logo.gif"></a>
+				</div>
+
+				<div class="col-md-4 footerCol">
+					<p>© 2017 Southeast Broach Company - South Carolina LLC.</p>
+					<a href="#">Privacy Policy</a>
+					<br>
+					<a href="#">Sales Terms & Conditions</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+	</script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
+
